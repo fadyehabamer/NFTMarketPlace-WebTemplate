@@ -15,7 +15,7 @@
 ## Tech
 
 - HTML5, CSS3, vanilla JavaScript
-- [Swiper 7](https://swiperjs.com/) (via unpkg CDN)
+- [Swiper 7.4.1](https://swiperjs.com/) (via jsDelivr, pinned with Subresource Integrity)
 - [Font Awesome 6](https://fontawesome.com/) (via cdnjs CDN)
 - Google Fonts: Playfair Display, Poppins
 
