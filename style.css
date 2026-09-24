@@ -3424,6 +3424,17 @@ h5 {
   color: #a24bf8;
 }
 
+.card .bid,
+.wallet {
+  font-family: inherit;
+  color: inherit;
+}
+
+.card .bid {
+  width: 100%;
+  cursor: pointer;
+}
+
 .card:hover {
   background: rgba(255, 255, 255, 0.5);
   -webkit-transform: scale(1.1);
