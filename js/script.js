@@ -1,10 +1,24 @@
 // header
 let navbar = document.querySelector('.menu');
-document.querySelector('#bar').onclick = () => {
-    navbar.classList.toggle('active');
+let menuToggle = document.querySelector('#bar');
+
+const setMenuOpen = (open) => {
+    navbar.classList.toggle('active', open);
+    menuToggle.setAttribute('aria-expanded', String(open));
+}
+
+menuToggle.onclick = () => {
+    setMenuOpen(!navbar.classList.contains('active'));
+}
+// the toggle is a div, so support keyboard activation like a native button
+menuToggle.onkeydown = (e) => {
+    if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        setMenuOpen(!navbar.classList.contains('active'));
+    }
 }
 window.onscroll = () => {
-    navbar.classList.remove('active');
+    setMenuOpen(false);
 }
 // filter
 let filterBtn = document.querySelectorAll('.filter-buttons .filter')

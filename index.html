@@ -38,7 +38,7 @@
         <div class="container">
             <a href="#" class="logo bold white">Psycho<span class="lightpurple">Art</span></a>
 
-            <div class="menu">
+            <div class="menu" id="main-menu">
                 <form action="" class="search-form">
                     <label for="search-box" class="fas fa-search" aria-hidden="true"></label>
                     <input type="search" id="search-box" placeholder="Search items and collections" aria-label="Search items and collections">
@@ -50,7 +50,8 @@
             </div>
 
             <div class="fas fa-wallet" id="wallet"></div>
-            <div class="fas fa-bars" id="bar"></div>
+            <div class="fas fa-bars" id="bar" role="button" tabindex="0" aria-label="Toggle navigation menu"
+                aria-controls="main-menu" aria-expanded="false"></div>
         </div>
     </header>
     <!-- header section ends -->
