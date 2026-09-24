@@ -5,11 +5,22 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="PsychoArt - a responsive NFT marketplace landing page template built with HTML, CSS and JavaScript.">
+    <meta name="theme-color" content="#181e41">
+    <!-- Open Graph / social preview -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="PsychoArt - NFT Marketplace Template">
+    <meta property="og:description" content="Create, sell and collect creative NFTs. A responsive NFT marketplace landing page template.">
+    <meta property="og:url" content="https://fadyehabamer.github.io/NFTMarketPlace-WebTemplate/">
+    <meta property="og:image" content="https://fadyehabamer.github.io/NFTMarketPlace-WebTemplate/img/heroimage.png">
+    <meta name="twitter:card" content="summary_large_image">
     <!-- swiperjs cdn link -->
     <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
 
     <!-- font awesome cdn link -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <!-- google font link -->
     <link
@@ -27,19 +38,20 @@
         <div class="container">
             <a href="#" class="logo bold white">Psycho<span class="lightpurple">Art</span></a>
 
-            <div class="menu">
+            <div class="menu" id="main-menu">
                 <form action="" class="search-form">
-                    <label for="search-box" class="fas fa-search"></label>
-                    <input type="search" id="search-box" placeholder="Search items and collections">
+                    <label for="search-box" class="fas fa-search" aria-hidden="true"></label>
+                    <input type="search" id="search-box" placeholder="Search items and collections" aria-label="Search items and collections">
                 </form>
                 <a href="#collections">Collections</a>
                 <a href="#featured">Featured</a>
                 <a href="#faq">FAQ</a>
-                <div class="btn bg-purple wallet">Sellect Wallet</div>
+                <div class="btn bg-purple wallet">Select Wallet</div>
             </div>
 
             <div class="fas fa-wallet" id="wallet"></div>
-            <div class="fas fa-bars" id="bar"></div>
+            <div class="fas fa-bars" id="bar" role="button" tabindex="0" aria-label="Toggle navigation menu"
+                aria-controls="main-menu" aria-expanded="false"></div>
         </div>
     </header>
     <!-- header section ends -->
@@ -74,12 +86,12 @@
                         </div>
                         <div class="ta-center">
                             <p class="size3 bold">99k+</p>
-                            <p class="size2 halfwhite">Aucations</p>
+                            <p class="size2 halfwhite">Auctions</p>
                         </div>
                     </div>
                 </div>
                 <div class="col6 col12-s spacebottom3-s">
-                    <img src="img/heroimage.png" alt="" class="img-responsive float">
+                    <img src="img/heroimage.png" alt="Collage of 3D NFT artworks: a neon skull, a glowing brain, a camera on a book and a figure in a red hooded suit" class="img-responsive float">
                 </div>
             </div>
         </div>
@@ -89,9 +101,9 @@
     <!-- partner section starts -->
     <section class="spacer5 spacer0-xs">
         <div class="container row jc-between jc-around-md">
-            <img src="img/binance.svg" alt="" class="height6 img-responsive-md">
-            <img src="img/ethereum.svg" alt="" class="height6 img-responsive-md">
-            <img src="img/blockchain.svg" alt="" class="height6 img-responsive-md spacetop1-md">
+            <img src="img/binance.svg" alt="Binance" class="height6 img-responsive-md">
+            <img src="img/ethereum.svg" alt="Ethereum" class="height6 img-responsive-md">
+            <img src="img/blockchain.svg" alt="Blockchain" class="height6 img-responsive-md spacetop1-md">
         </div>
     </section>
     <!-- partner section ends -->
@@ -105,7 +117,7 @@
             </p>
             <div class="row ai-center jc-between flexcol-s">
                 <div class="col5 col10-s spacebottom2-s">
-                    <img src="img/about.png" class="img-responsive" alt="">
+                    <img src="img/about.png" class="img-responsive" alt="Abstract pink and blue fluid artwork with bubbles">
                 </div>
                 <div class="col6 col12-s ta-center-s">
                     <h3 class="size3 bold">Get Popular NFT</h3>
@@ -134,12 +146,12 @@
             <div class="row spacebottom3 filter-buttons">
                 <div class="col3 filter col6-xs spacebottom1-xs" data-filter="all">All</div>
                 <div class="col3 filter col6-xs spacebottom1-xs" data-filter="art">Art</div>
-                <div class="col3 filter col6-xs" data-filter="photograpy">Photograpy</div>
+                <div class="col3 filter col6-xs" data-filter="photography">Photography</div>
                 <div class="col3 filter col6-xs" data-filter="pattern">Pattern</div>
             </div>
             <div class="row box-card jc-evenly-md">
                 <div class="col4 card collect bg-white10 col5-md col6-s" data-item="art">
-                    <img src="img/collection1.png" class="img-responsive" alt="">
+                    <img src="img/collection1.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -156,8 +168,8 @@
                         Place a bid
                     </a>
                 </div>
-                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photograpy">
-                    <img src="img/collection2.png" class="img-responsive" alt="">
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photography">
+                    <img src="img/collection2.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -175,7 +187,7 @@
                     </a>
                 </div>
                 <div class="col4 card collect bg-white10 col5-md col6-s" data-item="pattern">
-                    <img src="img/collection3.png" class="img-responsive" alt="">
+                    <img src="img/collection3.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -194,7 +206,7 @@
                 </div>
 
                 <div class="col4 card collect bg-white10 col5-md col6-s" data-item="art">
-                    <img src="img/collection4.png" class="img-responsive" alt="">
+                    <img src="img/collection4.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -211,8 +223,8 @@
                         Place a bid
                     </a>
                 </div>
-                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photograpy">
-                    <img src="img/collection5.png" class="img-responsive" alt="">
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photography">
+                    <img src="img/collection5.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -230,7 +242,7 @@
                     </a>
                 </div>
                 <div class="col4 card collect bg-white10 col5-md col6-s" data-item="pattern">
-                    <img src="img/collection6.png" class="img-responsive" alt="">
+                    <img src="img/collection6.png" class="img-responsive" alt="An Angel artwork by @Angel">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -249,7 +261,7 @@
                 </div>
 
                 <div class="col4 card collect bg-white10 col5-md col6-s" data-item="art">
-                    <img src="img/collection7.png" class="img-responsive" alt="">
+                    <img src="img/collection7.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -266,8 +278,8 @@
                         Place a bid
                     </a>
                 </div>
-                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photograpy">
-                    <img src="img/collection8.png" class="img-responsive" alt="">
+                <div class="col4 card collect bg-white10 col5-md col6-s" data-item="photography">
+                    <img src="img/collection8.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -285,7 +297,7 @@
                     </a>
                 </div>
                 <div class="col4 card collect bg-white10 col5-md col6-s" data-item="pattern">
-                    <img src="img/collection9.png" class="img-responsive" alt="">
+                    <img src="img/collection9.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                     <div class="row jc-between spacetop2">
                         <div>
                             <p class="size2 halfwhite">
@@ -318,7 +330,7 @@
                 <div class="swiper-wrapper">
                     <div class="col4 col5-md col7-s swiper-slide">
                         <div class="card bg-white10">
-                            <img src="img/collection4.png" class="img-responsive" alt="">
+                            <img src="img/collection4.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                             <div class="row jc-between spacetop2">
                                 <div>
                                     <p class="size2 halfwhite">
@@ -338,7 +350,7 @@
                     </div>
                     <div class="col4 col5-md col7-s swiper-slide">
                         <div class="card bg-white10">
-                            <img src="img/collection5.png" class="img-responsive" alt="">
+                            <img src="img/collection5.png" class="img-responsive" alt="Yellow Red artwork by @Johny">
                             <div class="row jc-between spacetop2">
                                 <div>
                                     <p class="size2 halfwhite">
@@ -358,7 +370,7 @@
                     </div>
                     <div class="col4 col5-md col7-s swiper-slide">
                         <div class="card bg-white10">
-                            <img src="img/collection6.png" class="img-responsive" alt="">
+                            <img src="img/collection6.png" class="img-responsive" alt="An Angel artwork by @Angel">
                             <div class="row jc-between spacetop2">
                                 <div>
                                     <p class="size2 halfwhite">
@@ -378,7 +390,7 @@
                     </div>
                     <div class="col4 col5-md col7-s swiper-slide">
                         <div class="card bg-white10">
-                            <img src="img/collection1.png" class="img-responsive" alt="">
+                            <img src="img/collection1.png" class="img-responsive" alt="An Angel artwork by @Angel">
                             <div class="row jc-between spacetop2">
                                 <div>
                                     <p class="size2 halfwhite">
@@ -404,7 +416,7 @@
     <!-- featured section ends -->
 
     <!-- creator section starts -->
-    <section class="creator spacer10" id="featured">
+    <section class="creator spacer10" id="creator">
         <div class="container">
             <h1 class="bold size4 ta-center">Top Creator</h1>
             <p class="spacebottom3 halfwhite size2 ta-center">
@@ -455,7 +467,7 @@
     <!-- FAQ section starts -->
     <section class="spacer10" id="faq">
         <div class="container">
-            <h1 class="bold size4 ta-center">Freaquently Asked<br>Question</h1>
+            <h1 class="bold size4 ta-center">Frequently Asked<br>Question</h1>
             <p class="spacebottom3 halfwhite size2 ta-center">
                 Wanna Ask Something?
             </p>
@@ -464,7 +476,7 @@
                     <div class="box spacebottom5">
                         <div class="title row jc-between">
                             <h3 class="size2 halfwhite">Lorem ipsum ipsum?</h3>
-                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                            <i class="fas fa-angle-down size2 halfwhite" aria-hidden="true"></i>
                         </div>
                         <p class="answer size2 spacetop1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Voluptates
@@ -474,7 +486,7 @@
                     <div class="box spacebottom5">
                         <div class="title row jc-between">
                             <h3 class="size2 halfwhite">Lorem ipsum ipsum?</h3>
-                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                            <i class="fas fa-angle-down size2 halfwhite" aria-hidden="true"></i>
                         </div>
                         <p class="answer size2 spacetop1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Voluptates
@@ -484,7 +496,7 @@
                     <div class="box spacebottom5">
                         <div class="title row jc-between">
                             <h3 class="size2 halfwhite">Lorem ipsum ipsum?</h3>
-                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                            <i class="fas fa-angle-down size2 halfwhite" aria-hidden="true"></i>
                         </div>
                         <p class="answer size2 spacetop1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Voluptates
@@ -496,7 +508,7 @@
                     <div class="box spacebottom5">
                         <div class="title row jc-between">
                             <h3 class="size2 halfwhite">Lorem ipsum ipsum?</h3>
-                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                            <i class="fas fa-angle-down size2 halfwhite" aria-hidden="true"></i>
                         </div>
                         <p class="answer size2 spacetop1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Voluptates
@@ -506,7 +518,7 @@
                     <div class="box spacebottom5">
                         <div class="title row jc-between">
                             <h3 class="size2 halfwhite">Lorem ipsum ipsum?</h3>
-                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                            <i class="fas fa-angle-down size2 halfwhite" aria-hidden="true"></i>
                         </div>
                         <p class="answer size2 spacetop1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Voluptates
@@ -516,7 +528,7 @@
                     <div class="box spacebottom5">
                         <div class="title row jc-between">
                             <h3 class="size2 halfwhite">Lorem ipsum ipsum?</h3>
-                            <i class="fas fa-angle-down size2 halfwhite"></i>
+                            <i class="fas fa-angle-down size2 halfwhite" aria-hidden="true"></i>
                         </div>
                         <p class="answer size2 spacetop1 ">Lorem ipsum dolor sit amet consectetur adipisicing elit.
                             Voluptates
@@ -566,9 +578,9 @@
                 <a href="#" class="size2 halfwhite spacetop2">+012 3456789</a>
                 <a href="#" class="size2 halfwhite spacetop2">xyz@gmail.com</a>
                 <div class="row jc-between spacetop2 jc-evenly-s">
-                    <a href="#" class="fab fa-youtube size2 halfwhite spacetop2"></a>
-                    <a href="#" class="fab fa-discord size2 halfwhite spacetop2"></a>
-                    <a href="#" class="fab fa-instagram size2 halfwhite spacetop2"></a>
+                    <a href="#" class="fab fa-youtube size2 halfwhite spacetop2" aria-label="YouTube"></a>
+                    <a href="#" class="fab fa-discord size2 halfwhite spacetop2" aria-label="Discord"></a>
+                    <a href="#" class="fab fa-instagram size2 halfwhite spacetop2" aria-label="Instagram"></a>
                 </div>
             </div>
         </div>
