@@ -3329,20 +3329,6 @@ h5 {
   border-bottom: 1px solid white;
 }
 
-.bg-image {
-  background-image: url(/img/background.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
-.bg-image2 {
-  background-image: url(/img/background2.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-position: center;
-}
-
 .bg-white10 {
   background: rgba(255, 255, 255, 0.1);
 }
